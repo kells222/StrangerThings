@@ -1,0 +1,12 @@
+ 
+ // const toggleForm = (formName) => {
+    //     setCurrForm(formName);
+
+    // }
+ 
+ {/* {currForm === 'login' ? <Login onFormSwitch={toggleForm} /> : <Signup onFormSwitch={toggleForm} /> } */}
+
+
+ <Route path='/login' element={<Login currForm={currForm === 'login' ? <Login/> : <Signup/> }/>} />
+ <Route path='/signup' element={<Signup />}/>
+ <Route path='/posts' element={<Posts posts={posts}/> } />

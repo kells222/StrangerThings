@@ -1,3 +1,5 @@
+
+
 const COHORT_NAME = "2302-ACC-PT-WEB-PT-E";
 const BASE_URL= `https://strangers-things.herokuapp.com/api/${COHORT_NAME}`;
 
