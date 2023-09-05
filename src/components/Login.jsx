@@ -1,5 +1,8 @@
 import { useState } from "react";
 import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
+import Signup from "./Signup";
+
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -13,6 +16,7 @@ function Login() {
 
   return (
 <>
+
 <div className="auth-form-container">
     <h3>Login to account</h3>
     <form className='login-form' onSubmit={handleSubmit}>
@@ -22,7 +26,8 @@ function Login() {
         <input value={password} onChange={(e) => setPassword(e.target.value)} type='password' placeholder='Your Password' id='password' name='password'/> <br/>
         <button type='submit'>Log me in!</button>
     </form>
-    <button className='link-btn' >No account? Sign-up here</button>
+    <Link to='/signup' className="link-btn">No account? Sign-up here</Link>
+    {/* <button className='link-btn' >No account? Sign-up here</button> */}
 </div>
 </>
   )

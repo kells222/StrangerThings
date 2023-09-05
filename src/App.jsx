@@ -2,9 +2,12 @@ import React, {useState,useEffect} from 'react';
 import { fetchAllPosts } from './api';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Posts from './components/Posts';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import NavBar from './components/NavBar';
+// import { Card } from 'react-bootstrap';
 
 
 function App() {
@@ -23,6 +26,8 @@ const [posts, setPosts] = useState([]);
   return (
     <div>
         <h1>Sell Your Things</h1>
+        <NavBar/>
+        
         <BrowserRouter>
         <Routes>
             

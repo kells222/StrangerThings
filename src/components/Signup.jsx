@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState} from 'react';
-// import './App.css';
+import { Link } from 'react-router-dom';
 
 
 function Signup() {
@@ -23,7 +23,9 @@ function Signup() {
         <input value={password} onChange={(e) => setPassword(e.target.value)} type='password' placeholder='Your Password' id='password' name='password'/> <br/>
         <button type='submit'>Sign me up!</button>
     </form>
-    <button className='link-btn'>Already have an account? Login here.</button>
+    <Link to='/login' className="link-btn">Already have an account? Login here.</Link>
+
+    {/* <button className='link-btn'>Already have an account? Login here.</button> */}
 </div>  
   )
 }
