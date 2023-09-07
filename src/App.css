@@ -52,3 +52,7 @@ button{
     text-decoration: underline;
 
 }
+
+#delete-btn {
+    color: red;
+}

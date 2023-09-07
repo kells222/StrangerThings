@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import { fetchAllPosts } from './api';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Posts from './components/Posts';
@@ -28,14 +28,14 @@ const [posts, setPosts] = useState([]);
         <h1>Sell Your Things</h1>
         <NavBar/>
         
-        <BrowserRouter>
+     
         <Routes>
             
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />}/>
-            <Route path='/posts' element={<Posts posts={posts}/> } />
+            <Route path='/' element={<Posts posts={posts}/> } />
         </Routes>
-        </BrowserRouter>
+       
        
     </div>
   )
