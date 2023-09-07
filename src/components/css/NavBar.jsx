@@ -11,7 +11,7 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
-            <Nav.Link href="/posts">Posts</Nav.Link>
+            {/* <Nav.Link href="/posts">Posts</Nav.Link> */}
             <Nav.Link href="/profile">Profile</Nav.Link>
           </Nav>
         </Container>

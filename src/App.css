@@ -39,11 +39,11 @@ input{
 
 button{
     border: none;
-    background-color: white;
+    background-color: rgb(241, 253, 255);
     padding: 20px;
-    border-radius: 10px;
     cursor: pointer;
     color: #7439db;
+    border: 5px 5px 5px 5px;
 }
 
 .link-btn{

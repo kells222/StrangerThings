@@ -2,6 +2,8 @@ import React from 'react';
 // import Card from './Card';
 
 function PostItem({post}) {
+
+
   return (
     <div>
         <h2>{post.title}</h2>
@@ -11,8 +13,13 @@ function PostItem({post}) {
             <h4>Price:</h4>{post.price} 
             <h4>Descripton:</h4>{post.description}
         </div>
-        <button id='msg-btn'>Send Message</button>
-        <button id='delete-btn'>Delete Post</button>
+        <div>
+          <a href='/message'>
+          <button id='msg-btn'>Send Message</button>
+          </a>
+        
+          <button id='delete-btn'>Delete Post</button>
+        </div>
 
     </div>
   )

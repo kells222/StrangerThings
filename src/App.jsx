@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Posts from './components/Posts';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import NavBar from './components/NavBar';
-// import { Card } from 'react-bootstrap';
+import NavBar from './components/css/NavBar';
+import Message from './components/Message';
 
 
 function App() {
@@ -30,6 +30,7 @@ const [posts, setPosts] = useState([]);
         
      
         <Routes>
+            <Route path='/message' element={<Message />} />
             
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />}/>
