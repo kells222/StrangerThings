@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import NavBar from './components/css/NavBar';
 import Message from './components/Message';
+import Profile from './components/Profile';
 
 
 function App() {
@@ -31,7 +32,7 @@ const [posts, setPosts] = useState([]);
      
         <Routes>
             <Route path='/message' element={<Message />} />
-            
+            <Route path='/profile' element={<Profile />} />
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />}/>
             <Route path='/' element={<Posts posts={posts}/> } />

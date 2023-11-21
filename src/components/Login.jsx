@@ -5,23 +5,25 @@ import Signup from "./Signup";
 
 
 function Login() {
-    const [email, setEmail] = useState('');
+    const [user, setUser] = useState('');
     const [password,setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(email);
+        console.log(user);
         // console.log(password);
     }
+
+  
 
   return (
 <>
 
 <div className="auth-form-container">
     <h3>Login to account</h3>
-    <form className='login-form' onSubmit={handleSubmit}>
-        <label htmlFor='email'>Email:</label>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder='Your Email' id='email' name='email' /> <br/>
+    <form method="POST" className='login-form' onSubmit={handleSubmit}>
+        <label htmlFor='username'>Username:</label>
+        <input value={user} onChange={(e) => setUser(e.target.value)} type='text' placeholder='Your Username' id='username' name='username' /> <br/>
         <label htmlFor='password'>Password:</label>
         <input value={password} onChange={(e) => setPassword(e.target.value)} type='password' placeholder='Your Password' id='password' name='password'/> <br/>
         <button type='submit'>Log me in!</button>
